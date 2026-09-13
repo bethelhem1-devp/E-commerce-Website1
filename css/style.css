@@ -245,6 +245,8 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
 }
 .hero-overlay {
   position: absolute; inset: 0;
+    background: linear-gradient(30deg, rgba(13,13,13,0.1) 0%, rgba(13,13,13,0.1) 10%, rgba(13,13,13,0.5) 70%, rgba(13,13,13,0.5) 10%);
+      z-index: 2;
  
 }
 .hero-content {
@@ -519,7 +521,9 @@ button { font-family: inherit; cursor: pointer; border: none; background: none; 
   flex-direction: column;
   height: 100%;
 }
-.hero-overlay{background:none;}
+.hero-overlay{ position: absolute; inset: 0;
+    background: linear-gradient(30deg, rgba(13,13,13,0.1) 0%, rgba(13,13,13,0.1) 10%, rgba(13,13,13,0.5) 70%, rgba(13,13,13,0.5) 10%);
+      z-index: 2;}
 
   .hero-content {
     margin-top: 30em;
