@@ -19,10 +19,22 @@ window.addEventListener("load", () => {
 });
 
 
+//vedio after splash 
+const video = document.getElementById("heroVideo");
+
+setTimeout(() => {
+
+    video.innerHTML = `
+        <source src="assets/vid-2.mp4" type="video/mp4">
+    `;
+
+    video.load();
+    video.play();
+
+}, 2000);
+
 
 //back to top btn
-
-
 const backToTop = document.getElementById("backToTop");
 window.addEventListener("scroll", () => {
   backToTop.classList.toggle("visible", window.scrollY > 600);
