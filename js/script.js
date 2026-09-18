@@ -25,7 +25,7 @@ const video = document.getElementById("heroVideo");
 setTimeout(() => {
 
     video.innerHTML = `
-        <source src="assets/vid-2.mp4" type="video/mp4">
+        <source src="assets/vid-2-cmp.mp4" type="video/mp4">
     `;
 
     video.load();

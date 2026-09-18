@@ -7,7 +7,7 @@ const PRODUCTS = [
     id: 1,
     name: "Classic Two-Piece Suit",
     category: "Suits",
-    price: 15000,
+    price: 25000,
     color: "Navy",
     size: "M",
     styleNo: "STY-SU1",
