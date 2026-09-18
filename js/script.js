@@ -15,7 +15,7 @@ let activeFilter = "All";
 // ============================================
 const splash = document.getElementById("splash");
 window.addEventListener("load", () => {
-  setTimeout(() => splash.classList.add("splash-hide"), 2200);
+  setTimeout(() => splash.classList.add("splash-hide"), 2800);
 });
 
 
