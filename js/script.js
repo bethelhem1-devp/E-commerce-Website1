@@ -13,25 +13,24 @@ let activeFilter = "All";
 // ============================================
 // SPLASH SCREEN
 // ============================================
+// Splash screen — no need to wait for "load" since script.js
+// uses defer, so this already runs after the HTML is parsed.
 const splash = document.getElementById("splash");
-window.addEventListener("load", () => {
-  setTimeout(() => splash.classList.add("splash-hide"), 2500);
-});
+setTimeout(() => {
+  splash.classList.add("splash-hide");
+}, 1500);
 
-
-//vedio after splash 
+// Hero video — starts loading shortly after page render
 const video = document.getElementById("heroVideo");
 
 setTimeout(() => {
+  video.innerHTML = `<source src="assets/vid-2-cmp.mp4" type="video/mp4">`;
+  video.load();
 
-    video.innerHTML = `
-        <source src="assets/vid-2-cmp.mp4" type="video/mp4">
-    `;
-
-    video.load();
-    video.play();
-
-}, 2000);
+  video.play().catch((err) => {
+    console.log("Video play failed:", err);
+  });
+}, 800);
 
 
 //back to top btn
